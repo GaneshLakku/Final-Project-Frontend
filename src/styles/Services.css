@@ -1,0 +1,79 @@
+:root {
+    --maincolor: #2ec8a6;
+    --textcolor: #333;
+  }
+  
+  .our-service {
+    width: 100%;
+    padding: 3rem 7%;
+  }
+  
+  .service-heading h2 {
+    font-size: 40px;
+    color: var(--maincolor);
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+  }
+  
+  .main-services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    text-align: center;
+  }
+  
+  .inner-services {
+    flex: 1 1 300px;
+    padding: 3rem 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 2px solid var(--textcolor);
+    transition: all 0.3s ease;
+  }
+  
+  .inner-services:hover {
+    transform: translateY(-10px);
+    border-bottom: 2px solid var(--maincolor);
+    background-color: #f5f5f5;
+  }
+  
+  .inner-services:hover .service-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    background-color: var(--maincolor);
+  }
+  
+  .inner-services:hover .service-icon i {
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .service-icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid var(--maincolor);
+    background-color: #f5f5f5;
+  }
+  
+  .service-icon i {
+    font-size: 3rem;
+    color: var(--maincolor);
+    padding: 1rem;
+  }
+  
+  .inner-services h3 {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .inner-services p {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    line-height: 2.5rem;
+  }
+  

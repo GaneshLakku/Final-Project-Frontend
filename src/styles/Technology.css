@@ -1,0 +1,53 @@
+.technology {
+    padding: 2rem 7%;
+}
+
+.main-technology {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: -10px;
+}
+
+.inner-technology {
+    flex: 1 1 300px;
+    padding: 3rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-image:url('../assets/bgpattern11.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.inner-technology:hover {
+    background: var(--maincolor);
+}
+
+.inner-technology:hover i {
+    color: white;
+}
+
+.inner-technology:hover h2 {
+    color: white;
+}
+
+.inner-technology:hover p {
+    color: white;
+}
+
+.inner-technology i {
+    font-size: 48px;
+    color: var(--maincolor);
+}
+
+.inner-technology h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.inner-technology p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+}

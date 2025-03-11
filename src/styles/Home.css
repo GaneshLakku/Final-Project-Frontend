@@ -1,0 +1,102 @@
+:root{
+    --maincolor: #2ec8a6;
+    --secondcolor: #f8a803;
+    --thirdcolor: #f4ab01;
+    --textcolor: #4A5764;
+}
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+.main-home {
+    padding: 2rem 7%;
+    background-image: url(/blurbg1.jpeg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.home .home-left-content {
+    flex: 1 1 35rem;
+}
+
+.home-left-content span {
+    font-size: 1.7rem;
+    color: darkblue;
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+
+.home-left-content h2 {
+    font-size: 48px;
+    margin: 1rem 0;
+}
+
+.home-left-content p {
+    font-size: 1.7rem;
+    color: var(--textcolor);
+}
+
+.home_btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.home_btn a {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: var(--maincolor);
+    font-size: 1.7rem;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.home-btn a:hover {
+    padding: 0 2.5rem;
+}
+
+.homebtnsec {
+    background: transparent !important;
+    color: var(--textcolor) !important;
+    border: 1px solid var(--maincolor);
+}
+
+.homebtnsec:hover {
+    background-color: var(--secondcolor) !important;
+    color: white !important;
+}
+
+.home .home-right-content {
+    flex: 1 1 50rem;
+}
+
+.home .home-right-content img {
+    width: 100%;
+    margin-top: 10%;
+}

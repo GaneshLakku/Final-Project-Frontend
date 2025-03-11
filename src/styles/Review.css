@@ -1,0 +1,74 @@
+:root {
+    --maincolor: #2ec8a6;
+    --secondcolor: #f1c40f;
+}
+
+.main-review {
+    padding: 2.5rem 7%;
+    width: 100%;
+}
+
+.review-heading {
+    text-align: center;
+}
+
+.review-heading h1 {
+    font-size: 40px;
+    color: var(--maincolor);
+    padding-bottom: 3rem;
+}
+
+.review-inner-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.review-box {
+    flex: 1 1 300px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0 50px 0 0;
+    border: 2px solid var(--maincolor);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.review-box:hover {
+    border-radius: 50px 0 0 0;
+}
+
+.review-box img {
+    border-radius: 100%;
+    width: 100px;
+    transition: 1s;
+}
+
+.review-box:hover img {
+    transform: scale(1.1);
+}
+
+.review-stars {
+    padding: 1rem 0;
+}
+
+.review-stars i {
+    font-size: 2rem;
+    color: var(--secondcolor);
+    margin: 0.2rem;
+}
+
+.review-box h2 {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.review-box p {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+}

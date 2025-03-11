@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  .bap {
+    background-image: url('../assets/appbg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form input, .form select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .form button {
+    padding: 10px;
+    margin: 10px 5px 0 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .form .book-btn {
+    background: #ff7e5f;
+    color: white;
+  }
+  .form .book-btn:hover {
+    background: #e56b50;
+  }
+  .form .cancel-btn {
+    background: #ddd;
+    color: #333;
+  }
+  .form .cancel-btn:hover {
+    background: #bbb;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Qr h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }

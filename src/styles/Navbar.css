@@ -1,0 +1,159 @@
+:root {
+  --maincolor: #2ec8a6;
+  --secondcolor: #f8a803;
+  --thirdcolor: #f4ab01;
+  --textcolor: #4A5764;
+}
+
+.full-header,
+.simple-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 7%;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: white;
+}
+
+.logo {
+  width: 50px;
+}
+
+.logo img {
+  width: 110%;
+}
+
+.navbar a {
+  color: var(--textcolor);
+  font-size: 1.7rem;
+  margin: 1rem;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+.navbar a::after {
+  content: "";
+  background-color: var(--maincolor);
+  width: 0;
+  position: absolute;
+  height: 0.2rem;
+  left: 0;
+  margin-top: 0.5rem;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* Simple Nav Styles */
+.simple-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-btn {
+  margin-top: 10%;
+  padding: 10px 20px;
+  color: #0e0d0d;
+  font-weight: 900;
+  font-size: 16px;
+  border: 2px solid var(--maincolor);
+  border-radius: 2rem;
+  background: rgb(253, 253, 253);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.back-btn:hover {
+  background: rgb(240, 112, 7);
+}
+
+.back-btn i {
+  font-size: 20px;
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  color: #0e0d0d;
+  font-weight: 900;
+  font-size: 16px;
+  border: 2px solid var(--maincolor);
+  border-radius: 2rem;
+  background: rgb(253, 253, 253);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: rgb(240, 112, 7);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 20px;
+  color: var(--textcolor) !important;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: var(--maincolor) !important;
+  padding-left: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .simple-nav {
+    gap: 10px;
+  }
+  
+  .back-btn,
+  .login-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .navbar a {
+    font-size: 1.4rem;
+    margin: 0.5rem;
+  }
+}
+
+ 
